@@ -1,0 +1,154 @@
+/* body styling */
+body{
+  min-height: 100vh;
+  background-image: url(https://musicamente.com.br/wp-content/uploads/2017/07/MUSICBACKGROUND.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #616161;
+}
+/* artists component styling */
+.Artists{
+  padding: 2%;
+  max-width: 500px;
+  margin: 8% auto;
+  background-color: #fff;
+  text-align: center;
+}
+.Artists-title{
+  margin: 20px 0 0;
+  text-align: left;
+}
+.Artists-form{
+  display: flex;
+  align-items: baseline;
+}
+.Artists-form button{
+  margin: 0 0 0 5%;
+}
+.Artists-results{
+  margin-bottom: 16px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.Artists-results__info{
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Artists-results__header{
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-color: black;
+}
+/* albums component styling */
+.Albums{
+  padding: 2%;
+  max-width: 500px;
+  margin: 8% auto;
+  background-color: #fff;
+  text-align: center;
+}
+.Albums-artist{
+  display: flex;
+  align-items: stretch;
+  height: 195px;
+}
+.Albums-artist__thumbnail{
+  background-image: url(http://www.theaudiodb.com/images/media/artist/thumb/man-5350ed716bd42.jpg);
+  width: 45%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.Albums-artist .Albums-artist__info{
+  align-self: center;
+  margin: 4% 4% 0 auto;
+  text-align: right;
+}
+.Albums-results{
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  border: 12px solid #fff;
+  height: 130px;
+}
+.Albums-results__info{
+  text-align: right;
+}
+.Albums-results__header {
+    height: inherit;
+    min-width: 50%;
+    display: flex;
+    align-items: CENTER;
+    justify-content: center;
+}
+.Albums-results__header img{
+  max-width: 100%;
+  height: inherit;
+}
+.Albums-results__dialog >div:nth-of-type(2){
+  width: 400px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+/* track component styling */
+.Track-duration{
+  display: flex;
+  flex-direction: COLUMN;
+}
+.Track-error{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+.Track-header{
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.Track-header h3{
+  width: 100%;
+}
+.Albums-pages{
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.Albums-pages li{
+  border: 1px solid gray;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.Albums-pages li.current{
+  background-color: crimson;
+  color: white;
+}
+.Albums-back >span:first-of-type{
+  justify-content: flex-start;
+}
+.Not-found h3{
+  text-align: center;
+}
+/* media query for tablet and mobile screens */
+@media only screen and (max-width: 600px) {
+  .Artists {
+    max-width: 90%;
+  }
+  .Albums{
+    max-width: 90%;
+  }
+}
